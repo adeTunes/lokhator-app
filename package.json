@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/adeTunes/lokhator#readme",
   "dependencies": {
+    "@iconify/react": "^4.0.1",
+    "framer-motion": "^8.5.2",
     "next": "^13.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

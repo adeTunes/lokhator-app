@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.cdnfonts.com/css/clash-display");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-cta {
+    background: rgba(0, 172, 90, 0.2);
+}
+
+.clash-display {
+    font-family: "Clash Display";
+}
+.features-color {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.wrapping-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+}
+.wrapping-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(min(416px, 100%), 1fr));
+}
+
+.hero-phones {
+    box-shadow: 30.5805px 43.6864px 87.3728px rgba(0, 0, 0, 0.17);
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.middle-cta-phone {
+    box-shadow: 30.5805px 43.6864px 87.3728px rgba(0, 0, 0, 0.2);
+    box-shadow: -20px 43.6864px 87.3728px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section {
+    background: #3d9cae;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.footer-nav {
+    color: rgba(17, 17, 17, 0.8);
+}
