@@ -30,14 +30,14 @@ import { Icon } from "@iconify/react";
 function Features() {
     return (
         <div className="pt-[160px] bg-light-white">
-            <div className="lokhator-link px-[64px] justify-between max-[1219px]:block flex flex-wrap gap-x-5 py-[50px] items-center w-[80%] max-[588px]:w-[95%] mx-auto">
+            <div className="lokhator-link max-[401px]:px-[10px] px-[64px] justify-between max-[1219px]:block flex flex-wrap gap-x-5 py-[50px] items-center w-[80%] max-[588px]:w-[95%] mx-auto">
                 <div className="flex flex-col max-[1219px]:mb-[30px]">
                     <motion.h2
                         initial={{ opacity: 0, y: -60 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="clash-display font-semibold text-[32px] leading-[39.36px] tracking-[1.5px]">
+                        className="clash-display max-[401px]:text-[24px] font-semibold text-[32px] leading-[39.36px] tracking-[1.5px]">
                         Lokhator Links
                     </motion.h2>
                     <motion.p
@@ -52,13 +52,13 @@ function Features() {
                     </motion.p>
                     <div className="flex justify-start">
                         <div className="flex flex-col gap-4 items-center">
-                            <div className="flex items-center gap-7">
+                            <div className="flex items-center gap-7 max-[263px]:gap-[10px]">
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.8 }}
                                     viewport={{ once: true }}
-                                    className="flex py-[3px] px-[5px] items-center gap-2 links">
+                                    className="flex py-[3px] max-[334px]:text-[13px] px-[5px] items-center gap-2 links">
                                     <Icon icon="ci:link-02" color="#2FC67E" />
                                     <span>Football</span>
                                     <Icon icon="ant-design:plus-outlined" />
@@ -68,7 +68,7 @@ function Features() {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.8 }}
                                     viewport={{ once: true }}
-                                    className="flex py-[3px] px-[5px] items-center gap-2 links">
+                                    className="flex py-[3px] px-[5px] max-[334px]:text-[13px] items-center gap-2 links">
                                     <Icon icon="ci:link-02" color="#2FC67E" />
                                     <span>Basket Ball</span>
                                     <Icon icon="ant-design:plus-outlined" />
@@ -79,7 +79,7 @@ function Features() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                className="flex py-[3px] px-[5px] items-center gap-2 links">
+                                className="flex py-[3px] px-[5px] max-[334px]:text-[13px] items-center gap-2 links">
                                 <Icon icon="ci:link-02" color="#2FC67E" />
                                 <span>Arsenal</span>
                                 <Icon icon="ant-design:plus-outlined" />
@@ -151,23 +151,28 @@ function Features() {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="relative z-[2] overflow-hidden h-[440px] w-[440px] max-[588px]:w-[385px] max-[588px]:h-[385px] rounded-full bg-[#C2EBD8]">
+                        className="relative z-[2] max-[523px]:w-[190px] max-[523px]:h-[190px] overflow-hidden h-[440px] w-[440px] max-[588px]:w-[385px] max-[588px]:h-[385px] rounded-full bg-[#C2EBD8]">
                         <motion.img
-                            initial={{ y: 200 }}
+                            initial={{ y: 100 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                             src={PhoneLeft.src}
-                            className="absolute  w-[193px] top-[118px] right-[188px]"
+                            className="absolute max-[523px]:w-[70px] max-[523px]:right-[88px] w-[193px] top-[65px] right-[188px]"
+                            alt=""
+                        />
+                        <img
+                            src={PhoneRight.src}
+                            className="absolute max-[523px]:inline-block max-[523px]:w-[80px] max-[523px]:top-[93px] max-[523px]:right-[30px] w-[193px] top-[205px] right-[38px]"
                             alt=""
                         />
                         <motion.img
-                            initial={{ y: 200 }}
+                            initial={{ y: -200 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                             src={PhoneRight.src}
-                            className="absolute  w-[193px] top-[205px] right-[38px]"
+                            className="absolute max-[523px]:hidden max-[523px]:w-[80px] max-[523px]:top-[93px] max-[523px]:right-[30px] w-[193px] top-[205px] right-[38px]"
                             alt=""
                         />
                     </motion.div>
@@ -185,7 +190,7 @@ function Features() {
                         whileInView={{ x: 0, y: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="absolute w-11 h-11 top-[64px] left-[10px]"
+                        className="absolute w-11 h-11 max-[523px]:left-[-29px] top-[64px] left-[10px]"
                         src={IconPurple.src}
                         alt=""
                     />
@@ -194,7 +199,7 @@ function Features() {
                         whileInView={{ x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="absolute w-11 h-11 z-[3] left-[350px] top-[374px]"
+                        className="absolute w-11 h-11 max-[523px]:left-[171px] max-[523px]:top-[179px] z-[3] left-[350px] top-[374px]"
                         src={IconYellow.src}
                         alt=""
                     />
@@ -206,7 +211,7 @@ function Features() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="clash-display text-[#00AC5A] font-bold text-[36px] leading-[44px] tracking-[1.25px]">
+                            className="clash-display max-[401px]:text-[28px] text-[#00AC5A] font-bold text-[36px] leading-[44px] tracking-[1.25px]">
                             Stay Updated
                         </motion.h2>
                         <motion.p
@@ -238,7 +243,7 @@ function Features() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="clash-display capitalize text-[#00AC5A] font-bold text-[36px] leading-[44px] tracking-[1.25px]">
+                            className="clash-display max-[401px]:text-[28px] capitalize text-[#00AC5A] font-bold text-[36px] leading-[44px] tracking-[1.25px]">
                             list your service
                         </motion.h2>
                         <motion.p
@@ -259,14 +264,24 @@ function Features() {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden h-[440px] w-[440px] max-[588px]:h-[385px] max-[588px]:w-[385px] rounded-full bg-[#F2CCFF]">
+                        className="relative overflow-hidden max-[523px]:w-[190px] max-[523px]:h-[190px] h-[440px] w-[440px] max-[588px]:h-[385px] max-[588px]:w-[385px] rounded-full bg-[#F2CCFF]">
+                        <img
+                            src={ListPhone.src}
+                            className="absolute max-[523px]:inline-block max-[523px]:w-[70px] max-[523px]:right-[79px] w-[204px] max-[523px]:top-[65px] top-[118px] right-[188px]"
+                            alt=""
+                        />
+                        <img
+                            src={ListServiceCard.src}
+                            className="absolute max-[523px]:inline-block max-[523px]:h-[70px] max-[523px]:top-[84px] h-[178px] top-[205px] right-[8px]"
+                            alt=""
+                        />
                         <motion.img
                             initial={{ y: 200 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                             src={ListPhone.src}
-                            className="absolute  w-[204px] top-[118px] right-[188px]"
+                            className="absolute max-[523px]:hidden max-[523px]:w-[70px] max-[523px]:right-[79px] w-[204px] max-[523px]:top-[65px] top-[118px] right-[188px]"
                             alt=""
                         />
                         <motion.img
@@ -275,7 +290,7 @@ function Features() {
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                             src={ListServiceCard.src}
-                            className="absolute  h-[178px] top-[205px] right-[38px]"
+                            className="absolute max-[523px]:hidden max-[523px]:h-[70px] max-[523px]:top-[84px] h-[178px] top-[205px] right-[8px]"
                             alt=""
                         />
                     </motion.div>
@@ -293,14 +308,14 @@ function Features() {
                         whileInView={{ x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="absolute w-11 h-11 top-[375px] right-[63px]"
+                        className="absolute w-11 max-[523px]:top-[210px] max-[523px]:right-[20px] h-11 top-[375px] right-[63px]"
                         src={IconRoomService.src}
                         alt=""
                     />
                 </div>
             </div>
             <div className="w-[80%] mx-auto max-[588px]:w-[95%]">
-                <div className="pt-[71px] overflow-hidden mb-[-65px] relative z-50 cta-section px-[64px] grid gap-y-8 wrapping-grid-2 gap-3 max-[1214px]:w-fit max-[1214px]:mx-auto items-center">
+                <div className="pt-[71px] overflow-hidden mb-[-65px] relative z-50 cta-section px-[64px] max-[421px]:px-[20px] grid gap-y-8 wrapping-grid-2 gap-3 max-[1214px]:w-fit max-[1214px]:mx-auto items-center">
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col gap-4">
                             <motion.h3
@@ -316,7 +331,7 @@ function Features() {
                                 whileInView={{ y: 0 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                className="font-[Manrope] max-w-[420px] font-medium text-[18px] leading-7 tracking-[1.25px] text-light-white">
+                                className="font-[Manrope] max-w-[420px] max-[421px]:text-[15px] font-medium text-[18px] leading-7 tracking-[1.25px] text-light-white">
                                 Download the Lokhator app today and get the best
                                 exposure you and your services deserves.
                             </motion.p>
@@ -328,12 +343,12 @@ function Features() {
                             viewport={{ once: true }}
                             className="flex items-center gap-[37px]">
                             <img
-                                className="h-[52px] max-[545px]:h-[38px]"
+                                className="h-[52px] max-[334px]:h-[28px] max-[545px]:h-[38px]"
                                 src={PlayStore.src}
                                 alt=""
                             />
                             <img
-                                className="h-[52px] max-[545px]:h-[38px]"
+                                className="h-[52px] max-[334px]:h-[28px] max-[545px]:h-[38px]"
                                 src={AppStore.src}
                                 alt=""
                             />
@@ -342,20 +357,20 @@ function Features() {
                     <div className="flex justify-center">
                         <div className="flex items-end min-[1214px]:justify-end">
                             <motion.img
-                                initial={{ x: -60 }}
+                                initial={{ x: 100 }}
                                 whileInView={{ x: 0 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                className="h-[185px] max-[695px]:h-[140px] mr-[-30px] hero-phones"
+                                className="h-[185px] max-[334px]:h-[100px] max-[695px]:h-[140px] mr-[-30px] hero-phones"
                                 src={LeftMockup.src}
                                 alt=""
                             />
                             <motion.img
-                                initial={{ y: 60 }}
+                                initial={{ y: -60 }}
                                 whileInView={{ y: 0 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                className="h-[290px] max-[695px]:h-[160px] middle-cta-phone z-[2] hero-phones"
+                                className="h-[290px] max-[695px]:h-[160px] max-[334px]:h-[117px] middle-cta-phone z-[2] hero-phones"
                                 src={MiddleMockup.src}
                                 alt=""
                             />
@@ -364,7 +379,7 @@ function Features() {
                                 whileInView={{ x: 0 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                className="h-[185px] max-[695px]:h-[140px] ml-[-30px] hero-phones"
+                                className="h-[185px] max-[334px]:h-[100px] max-[695px]:h-[140px] ml-[-30px] hero-phones"
                                 src={RightMockup.src}
                                 alt=""
                             />

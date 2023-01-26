@@ -6,7 +6,7 @@ import NavDrawer from "./drawer";
 
 function Header() {
     return (
-        <div className="flex font-Manrope justify-between py-7 items-center w-[80%] mx-auto">
+        <div className="flex font-Manrope justify-between py-7 items-center max-[401px]:w-[95%] w-[80%] mx-auto">
             <div>
                 <img src={Logo.src} alt="" className=" h-9" />
             </div>
@@ -20,7 +20,7 @@ function Header() {
                 </ul>
             </nav>
             <div className="max-[640px]:flex gap-2">
-                <button className="font-medium leading-[21.86px] text-light-white px-6 py-3 bg-cta rounded-lg">
+                <button className="font-medium max-[334px]:px-[8px] max-[334px]:py-[13px] max-[334px]:text-[13px] leading-[21.86px] text-light-white px-6 py-3 bg-cta rounded-lg">
                     Get the app
                 </button>
                 <NavDrawer />

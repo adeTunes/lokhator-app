@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
     return (
-        <div className="relative overflow-hidden w-[80%] mx-auto">
+        <div className="relative overflow-hidden max-[401px]:w-[95%] w-[80%] mx-auto">
             <div className="pt-[134px] pb-[88px] max-[1144px]:flex max-[1144px]:gap-6 flex-col text-center grid wrapping-grid">
                 <div>
                     <div className="max-w-[645px] mb-4 mx-auto">
@@ -17,7 +17,7 @@ function Hero() {
                             initial={{ opacity: 0, y: -60 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="clash-display font-bold text-[48px] leading-[60px] text-light-white tracking-[1.5px]">
+                            className="clash-display max-[401px]:text-[32px] font-bold text-[48px] leading-[60px] text-light-white tracking-[1.5px]">
                             Expand your world with lokhator
                         </motion.h1>
                     </div>
@@ -25,7 +25,7 @@ function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="font-[Manrope] mb-11 font-medium text-[20px] leading-[30px] text-light-white">
+                        className="font-[Manrope] mb-11 font-medium max-[401px]:text-[18px] text-[20px] leading-[30px] text-light-white">
                         Get the best exposures you and your business services
                         deserves for free!
                     </motion.p>
@@ -44,7 +44,7 @@ function Hero() {
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.8 }}
                         src={EllipseYellow.src}
-                        className="w-[403px] h-[403px]"
+                        className="w-[403px] h-[403px] max-[545px]:w-[230px] max-[545px]:h-[230px]"
                         alt=""
                     />
                     <motion.img
@@ -52,7 +52,7 @@ function Hero() {
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.8 }}
                         src={EllipseGreen.src}
-                        className="w-[213px] max-[1144px]:left-[-19px] h-[213px] absolute top-0 right-[265px]"
+                        className="w-[213px] max-[1144px]:left-[-19px] max-[545px]:w-[90px] max-[545px]:h-[90px] h-[213px] absolute top-0 right-[265px]"
                         alt=""
                     />
                     <motion.img
@@ -60,7 +60,7 @@ function Hero() {
                         animate={{ y: 0 }}
                         transition={{ duration: 0.8 }}
                         src={FemaleHandHoldingIPhone.src}
-                        className="absolute h-[589px] max-[1144px]:left-[58px] right-[-39px] top-[-45px]"
+                        className="absolute h-[589px] max-[1144px]:left-[58px] max-[545px]:h-[280px] max-[545px]:top-[43px] right-[-39px] top-[-45px]"
                         alt=""
                     />
                     <motion.img
@@ -68,7 +68,7 @@ function Hero() {
                         animate={{ x: 0 }}
                         transition={{ duration: 0.8 }}
                         src={ServiceCard.src}
-                        className="absolute max-[1144px]:left-[211px] right-0 w-[220px] top-[60px]"
+                        className="absolute max-[1144px]:left-[211px] max-[545px]:w-[80px] max-[545px]:left-[134px] right-0 w-[220px] top-[60px]"
                         alt=""
                     />
                 </div>
