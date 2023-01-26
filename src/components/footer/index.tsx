@@ -12,9 +12,7 @@ function Footer() {
                 </div>
                 <ul className="flex items-center gap-11">
                     {navData.map((item, idx) => (
-                        <li
-                            className="footer-nav font-[Manrope] font-medium leading-[22px]"
-                            key={idx}>
+                        <li className="footer-nav" key={idx}>
                             <Link href="/">{item}</Link>
                         </li>
                     ))}

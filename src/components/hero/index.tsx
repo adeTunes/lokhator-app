@@ -1,95 +1,78 @@
 import React from "react";
 import AppStore from "./assets/app-store.png";
 import PlayStore from "./assets/play-store.png";
-import Phone1 from "./assets/phone_1.png";
-import Phone2 from "./assets/phone_2.png";
-import Phone3 from "./assets/phone_3.png";
-import Phone4 from "./assets/phone_4.png";
-import Particle1 from "./assets/particle-1.svg";
-import Particle2 from "./assets/particle-2.svg";
-import Particle3 from "./assets/particle-3.svg";
+import EllipseYellow from "./assets/ellipse-yellow.png";
+import EllipseGreen from "./assets/ellipse-green.png";
+import ServiceCard from "./assets/service-card.png";
+import FemaleHandHoldingIPhone from "./assets/female-hand-holding-iPhone.png";
 import { motion } from "framer-motion";
 
 function Hero() {
     return (
-        <div className="relative bg-light-GO-Green overflow-hidden">
-            <div className="pt-[134px] text-center relative z-10 w-[50%] mx-auto">
-                <div className="max-w-[645px] mb-4 mx-auto">
-                    <motion.h1
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.5 }}
-                        className="clash-display font-bold text-[48px] leading-[60px] text-light-white tracking-[1.5px]">
-                        Expand your world with lokhator
-                    </motion.h1>
+        <div className="relative overflow-hidden w-[80%] mx-auto">
+            <div className="pt-[134px] pb-[88px] max-[1144px]:flex max-[1144px]:gap-6 flex-col text-center grid wrapping-grid">
+                <div>
+                    <div className="max-w-[645px] mb-4 mx-auto">
+                        <motion.h1
+                            initial={{ opacity: 0, y: -60 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="clash-display font-bold text-[48px] leading-[60px] text-light-white tracking-[1.5px]">
+                            Expand your world with lokhator
+                        </motion.h1>
+                    </div>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="font-[Manrope] mb-11 font-medium text-[20px] leading-[30px] text-light-white">
+                        Get the best exposures you and your business services
+                        deserves for free!
+                    </motion.p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="flex items-center gap-2 mb-[80px] justify-center">
+                        <img className="w-[125px]" src={PlayStore.src} alt="" />
+                        <img className="w-[125px]" src={AppStore.src} alt="" />
+                    </motion.div>
                 </div>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
-                    className="font-[Manrope] mb-11 font-medium text-[20px] leading-[30px] text-light-white">
-                    Get the best exposures you and your business services
-                    deserves for free!
-                </motion.p>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
-                    className="flex items-center gap-2 mb-[80px] justify-center">
-                    <img className="w-[125px]" src={PlayStore.src} alt="" />
-                    <img className="w-[125px]" src={AppStore.src} alt="" />
-                </motion.div>
-                <motion.div
-                    initial={{ y: 400 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 1.5 }}
-                    className="flex items-end justify-center gap-7">
-                    <img
-                        className="w-[185px] hero-phones bg-light-white"
-                        src={Phone1.src}
+                <div className="flex justify-end max-[1144px]:block max-[1144px]:w-[90%] max-[1144px]:mx-auto max-[1144px]:max-w-fit relative">
+                    <motion.img
+                        initial={{ scale: 0.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 0.8 }}
+                        src={EllipseYellow.src}
+                        className="w-[403px] h-[403px]"
                         alt=""
                     />
-                    <img
-                        className="w-[185px] hero-phones bg-light-white"
-                        src={Phone2.src}
+                    <motion.img
+                        initial={{ scale: 0.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 0.8 }}
+                        src={EllipseGreen.src}
+                        className="w-[213px] max-[1144px]:left-[-19px] h-[213px] absolute top-0 right-[265px]"
                         alt=""
                     />
-                    <img
-                        className="w-[185px] hero-phones bg-light-white"
-                        src={Phone3.src}
+                    <motion.img
+                        initial={{ y: 200 }}
+                        animate={{ y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        src={FemaleHandHoldingIPhone.src}
+                        className="absolute h-[589px] max-[1144px]:left-[58px] right-[-39px] top-[-45px]"
                         alt=""
                     />
-                    <img
-                        className="w-[185px] hero-phones bg-light-white"
-                        src={Phone4.src}
+                    <motion.img
+                        initial={{ x: 200 }}
+                        animate={{ x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        src={ServiceCard.src}
+                        className="absolute max-[1144px]:left-[211px] right-0 w-[220px] top-[60px]"
                         alt=""
                     />
-                </motion.div>
+                </div>
             </div>
-            <motion.img
-                initial={{ opacity: 0.4, x: -130 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
-                className="absolute top-[268px] left-0 w-[210px]"
-                src={Particle1.src}
-                alt=""
-            />
-            <motion.img
-                initial={{ opacity: 0.4, x: 130 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
-                className="absolute bottom-[336px] right-0 w-[190px]"
-                src={Particle2.src}
-                alt=""
-            />
-            <motion.img
-                initial={{ opacity: 0.4, x: 130 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5 }}
-                className="absolute top-[123px] right-0 w-[150px]"
-                src={Particle3.src}
-                alt=""
-            />
         </div>
     );
 }

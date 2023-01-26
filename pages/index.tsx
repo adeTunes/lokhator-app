@@ -7,8 +7,10 @@ import Hero from "../src/components/hero";
 function index() {
     return (
         <>
-            <Header />
-            <Hero />
+            <div className="noisy">
+                <Header />
+                <Hero />
+            </div>
             <Features />
             <Footer />
         </>

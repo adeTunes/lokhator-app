@@ -10,7 +10,7 @@ function Header() {
                 <img src={Logo.src} alt="" className=" h-9" />
             </div>
             <nav>
-                <ul className="flex items-center gap-3 text-light-GO-Green">
+                <ul className="flex items-center gap-3 text-light-white">
                     {navData.map((item, idx) => (
                         <li className="font-medium leading-[21.86px]" key={idx}>
                             <Link href="/">{item}</Link>
@@ -19,7 +19,7 @@ function Header() {
                 </ul>
             </nav>
             <div>
-                <button className="font-medium leading-[21.86px] text-light-GO-Green px-6 py-3 bg-cta rounded-lg">
+                <button className="font-medium leading-[21.86px] text-light-white px-6 py-3 bg-cta rounded-lg">
                     Get the app
                 </button>
             </div>
