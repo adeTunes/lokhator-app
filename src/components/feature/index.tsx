@@ -60,7 +60,7 @@ function Features() {
                                     viewport={{ once: true }}
                                     className="flex py-[3px] max-[334px]:text-[13px] px-[5px] items-center gap-2 links">
                                     <Icon icon="ci:link-02" color="#2FC67E" />
-                                    <span>Football</span>
+                                    <span>RESTAURANT </span>
                                     <Icon icon="ant-design:plus-outlined" />
                                 </motion.div>
                                 <motion.div
@@ -70,7 +70,7 @@ function Features() {
                                     viewport={{ once: true }}
                                     className="flex py-[3px] px-[5px] max-[334px]:text-[13px] items-center gap-2 links">
                                     <Icon icon="ci:link-02" color="#2FC67E" />
-                                    <span>Basket Ball</span>
+                                    <span>HAIRSTYLIST</span>
                                     <Icon icon="ant-design:plus-outlined" />
                                 </motion.div>
                             </div>
@@ -81,7 +81,7 @@ function Features() {
                                 viewport={{ once: true }}
                                 className="flex py-[3px] px-[5px] max-[334px]:text-[13px] items-center gap-2 links">
                                 <Icon icon="ci:link-02" color="#2FC67E" />
-                                <span>Arsenal</span>
+                                <span>HOTELS</span>
                                 <Icon icon="ant-design:plus-outlined" />
                             </motion.div>
                         </div>

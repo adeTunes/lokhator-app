@@ -26,8 +26,7 @@ function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         className="font-[Manrope] mb-11 font-medium max-[401px]:text-[18px] text-[20px] leading-[30px] text-light-white">
-                        Get the best exposures you and your business services
-                        deserves for free!
+                        GET THE EXPOSURE YOUR SERVICES NEED FOR FREE
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
